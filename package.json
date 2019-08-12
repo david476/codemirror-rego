@@ -25,7 +25,7 @@
   "scripts": {
     "build": "babel src --out-dir .",
     "lint": "./scripts/lint",
-    "prepare": "npm run lint && npm run build && sort-package-json",
+    "prepublishOnly": "npm run lint && npm run build && sort-package-json",
     "sort-package-json": "sort-package-json"
   },
   "babel": {
